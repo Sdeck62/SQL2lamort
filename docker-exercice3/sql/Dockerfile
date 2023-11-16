@@ -1,0 +1,9 @@
+FROM mysql
+
+WORKDIR /sql
+
+COPY . .
+
+ENV MYSQL_DATABASE=beer
+
+ENV MYSQL_ROOT_PASSWORD=root
